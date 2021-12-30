@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script><!--Diagram batang-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script><!--Diagram bundar-->
+<body>
+  
+  <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+  <script>
+    var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+    var yValues = [55, 49, 44, 24, 15];
+    var barColors = ["red", "green","blue","orange","brown"];
+
+    new Chart("myChart", {
+      type: "bar",
+      data: {
+        labels: xValues,
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues
+        }]
+      },
+      options: {
+        legend: {display: false},
+        title: {
+          display: true,
+          text: "World Wine Production 2018"
+        }
+      }
+    });
+  </script>
+
+  <!--Diagram bundar-->
+  <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+  <script>
+    var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+    var yValues = [55, 49, 44, 24, 15];
+    var barColors = [
+      "#b91d47",
+      "#00aba9",
+      "#2b5797",
+      "#e8c3b9",
+      "#1e7145"
+    ];
+
+    new Chart("myChart", {
+      type: "pie",
+      data: {
+        labels: xValues,
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues
+        }]
+      },
+      options: {
+        title: {
+          display: true,
+          text: "World Wide Wine Production 2018"
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <body>
+  
+  <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+  
+  <script>
+  var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+  var yValues = [55, 49, 44, 24, 15];
+  var barColors = [
+    "#b91d47",
+    "#00aba9",
+    "#2b5797",
+    "#e8c3b9",
+    "#1e7145"
+  ];
+  
+  new Chart("myChart", {
+    type: "doughnut",
+    data: {
+      labels: xValues,
+      datasets: [{
+        backgroundColor: barColors,
+        data: yValues
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: "World Wide Wine Production 2018"
+      }
+    }
+  });
+  </script>
+<!--jika ingin lebih dari satu grafik di dalam satu halaman maka bedakan nama id_nya-->
+</body>
+</html>
+
+<!--code untuk download file-->
+1.  <html>
+2.  <head><title>force download</title><head>
+3.  <style>button{margin:5px;cursor:pointer;}</style>
+4.  <body>
+5.  <h3>Force Download File</h3>
+6.  <p>Click Button to download file</p>
+7.    <button onclick="JavaScript:window.location.href='download.php?file=beach.jpg';"> Download Image</button><br />
+8.    <button onclick="JavaScript:window.location.href='download.php?file=example.pdf';"> Download PDF</button><br />
+9.    <button onclick="JavaScript:window.location.href='download.php?file=example.mp4';"> Download Video</button><br />
+10.   <button onclick="JavaScript:window.location.href='download.php?file=example.mp3';"> Download Audio</button><br />
+11.   <button onclick="JavaScript:window.location.href='download.php?file=example.exe';"> Download exe file</button><br />
+12. </body>
+13. </html>
+
+<!--file php untuk mendownload file-->
+<?php
+2.  $dir="download/";
+3.  $filename=$_GET['file'];
+4.  $file_path=$dir.$filename;
+5.  $ctype="application/octet-stream";
+6.  //
+7.  if(!empty($file_path) && file_exists($file_path)){ //check keberadaan file
+8.    header("Pragma:public");
+9.    header("Expired:0");
+10.   header("Cache-Control:must-revalidate");
+11.   header("Content-Control:public");
+12.   header("Content-Description: File Transfer");
+13.   header("Content-Type: $ctype");
+14.   header("Content-Disposition:attachment; filename=\"".basename($file_path)."\"");
+15.   header("Content-Transfer-Encoding:binary");
+16.   header("Content-Length:".filesize($file_path));
+17.   flush();
+18.   readfile($file_path);
+19.   exit();
+20. }else{
+21.   echo "The File does not exist.";
+22. }
+23. ?>
+
+//code js dan php untuk get data dari database ke grafik
+<script>
+  var ctx = document.getElementById("myChart").getContext('2d');
+  var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ["Teknik", "Fisip", "Ekonomi", "Pertanian"],
+      datasets: [{
+        label: '',
+        data: [
+        <?php 
+        $jumlah_teknik = mysqli_query($koneksi,"select * from mahasiswa where fakultas='teknik'");
+        echo mysqli_num_rows($jumlah_teknik);
+        ?>, 
+        <?php 
+        $jumlah_ekonomi = mysqli_query($koneksi,"select * from mahasiswa where fakultas='ekonomi'");
+        echo mysqli_num_rows($jumlah_ekonomi);
+        ?>, 
+        <?php 
+        $jumlah_fisip = mysqli_query($koneksi,"select * from mahasiswa where fakultas='fisip'");
+        echo mysqli_num_rows($jumlah_fisip);
+        ?>, 
+        <?php 
+        $jumlah_pertanian = mysqli_query($koneksi,"select * from mahasiswa where fakultas='pertanian'");
+        echo mysqli_num_rows($jumlah_pertanian);
+        ?>
+        ],
+        backgroundColor: [
+        'rgba(255, 99, 132, 0.2)',
+        'rgba(54, 162, 235, 0.2)',
+        'rgba(255, 206, 86, 0.2)',
+        'rgba(75, 192, 192, 0.2)'
+        ],
+        borderColor: [
+        'rgba(255,99,132,1)',
+        'rgba(54, 162, 235, 1)',
+        'rgba(255, 206, 86, 1)',
+        'rgba(75, 192, 192, 1)'
+        ],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        yAxes: [{
+          ticks: {
+            beginAtZero:true
+          }
+        }]
+      }
+    }
+  });
+</script>

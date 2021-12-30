@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #69e2ff;
+}
+.containerpes{
+    width: 50%;
+    height: auto;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 100px;
+}
+.headerdua{
+    width: 100%;
+    height: 55px;
+    background-color: #0081cb;
+    color: #ffffff;
+}
+.teksheader{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 13px;
+}
+form{
+    width: 50%;
+    margin: auto;
+}
+input{
+    border-radius: 5px;
+    margin-top: 15px;
+    border: solid #00b0ff 2px;
+}
+.tombol {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+.tombol1 .tombol2 {
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+    display: flex;
+}
+button{
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+    align-content: space-between;
+    background-color: #00b0ff;
+    width: 100px;
+    color: #263238;
+    border-color: #fff;
+}
+.tombol a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 10px;
+}
+.tombol1 a{
+    color: #263238;
+}
+/*halaman tambah kegiatan*/
+textarea{
+    width: 98%;
+    height: 30px;
+    margin-top: 20px;
+    border: solid #00b0ff 2px;
+}

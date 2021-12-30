@@ -1,0 +1,165 @@
+body {
+  background-color: #69e2ff;
+}
+.containerlog {
+  width: 60%;
+  height: 50%;
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 120px;
+}
+.logleft {
+  width: 50%;
+  height: 390px;
+  background-color: #fff;
+  color: #263238;
+  font-size: 25px;
+  text-align: center;
+}
+.foto {
+  width: 55%;
+  height: 55%;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+.foto img {
+  width: 100%;
+  height: 100%;
+}
+.teks {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+  color: #263238;
+}
+.logright {
+  width: 50%;
+  height: 390px;
+  text-align: center;
+  background-color: #00b0ff;
+}
+form {
+  width: 80%;
+  height: 240px;
+  line-height: 70px;
+  margin: auto;
+  margin-top: 30px;
+}
+.containerlog input {
+  width: 98%;
+  height: 30px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #00b0ff;
+  border: solid #fff 2px;
+}
+
+.tombol {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+.tombol1 .tombol2 {
+  width: 50%;
+  height: 30px;
+  border-radius: 10px;
+}
+button {
+  width: 50%;
+  height: 30px;
+  border-radius: 5px;
+  align-content: space-between;
+  background-color: #00b0ff;
+  width: 100px;
+  color: #263238;
+  border-color: #fff;
+}
+.tombol a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+}
+.tombol1 a {
+  color: #263238;
+}
+
+/*code milik edit user*/
+.contuser {
+  width: 30%;
+  height: 350px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 110px;
+}
+.header {
+  width: 100%;
+  height: 55px;
+  color: #fff;
+  background-color: #0081cb;
+}
+.teks2 {
+  padding-top: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+.contuser input,
+.contmodul input,
+select {
+  width: 98%;
+  height: 30px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #fff;
+  border: solid #00b0ff 2px;
+}
+
+/*code halaman tambah modul*/
+.contmodul {
+  width: 30%;
+  height: 550px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 10px;
+}
+
+/*code halaman tentang*/
+.nav {
+  width: 100%;
+  height: 45px;
+  background-color: #0081cb;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 13px;
+  font-weight: bold;
+  color: #fff;
+}
+.container,
+.isi {
+  width: 70%;
+  height: 830px;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.container h4 {
+  text-align: center;
+}
+p {
+  text-align: justify;
+}
