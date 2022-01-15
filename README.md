@@ -28,28 +28,11 @@ Development Team
 •	Nurul Maulida : Frontend
 •	M.Saiful Fahmi : Frontend
 
-
-
-
-
-
-
-
-
-
-
-
-
 TAMPILAN APLIKASI
 
 
 1.	Halaman Home
-
-
- 
-
- 
-
+![1 homee](https://user-images.githubusercontent.com/80879870/149608062-ce2bab77-ea06-4262-ade4-be8f380d36e5.png)
 2.	Halaman Kontak
 
 
