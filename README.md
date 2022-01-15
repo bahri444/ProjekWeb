@@ -33,6 +33,7 @@ TAMPILAN APLIKASI
 
 1.	Halaman Home
 ![1 homee](https://user-images.githubusercontent.com/80879870/149608062-ce2bab77-ea06-4262-ade4-be8f380d36e5.png)
+![1 2 home](https://user-images.githubusercontent.com/80879870/149608271-4e10a987-20ea-4a71-9c95-5f806a04804b.png)
 2.	Halaman Kontak
 
 
